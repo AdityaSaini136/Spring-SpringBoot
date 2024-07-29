@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+  <bean class="com.springcore.CoreSpringByDurgesh.constructorinjection.Crerti" name="cer">
+      <constructor-arg value="Java is a Object Oriented programming Language"/>
+  </bean>
+
+	<bean class="com.springcore.CoreSpringByDurgesh.constructorinjection.Emp" name="Emp">
+		<constructor-arg value="Aditya"/>
+		<constructor-arg value="120" type="int"/>
+		<constructor-arg ref="cer"/>
+	</bean>
+	
+	<bean class="com.springcore.CoreSpringByDurgesh.constructorinjection.Addition" name="add"> 
+	 <constructor-arg  value = "1982" />
+	 <constructor-arg  value = "2894" />
+	
+	</bean>
+</beans>

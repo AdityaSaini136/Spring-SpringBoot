@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th=http://www.thymeleaf.org/>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Welcome Message...</h1>
+<div>Name :<span th:text="${login.name}">Aditya</span></div>
+<div>Password :<span th:text="${login.pass}">909090 </span> </div>
+</body>
+<a href="#" th:href="@{/demo1}">Click here For New User</a>
+</html>

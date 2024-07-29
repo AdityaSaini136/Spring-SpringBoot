@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.springcore.CoreSpringByDurgesh.collection.Emp" id="emp1">
+		<property name="name" value="Sandeep" />
+		<property name="phones">
+			<list>
+				<value>80</value>
+				<value>40</value>
+				<value>20</value>
+				<value>40</value>
+				<value>80</value>
+			</list>
+		</property>
+		<property name="addresss">
+			<set>
+				<value>Haridwar</value>
+				<value>Roorkee</value>
+				<value>Mohali</value>
+				<value>Dehradun</value>
+			</set>
+		</property>
+		<property name="courses">
+			<map>
+				<entry key="Java" value="1month"></entry>
+				<entry key="Spring" value="2month"></entry>
+				<entry key="Core" value="1month"></entry>
+				<entry key="Core" value="1month"></entry>
+			</map>
+		</property>
+	</bean>
+</beans>
